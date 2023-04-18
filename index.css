@@ -1040,6 +1040,7 @@ footer .bottom_section img {
     gap: 20px;
     padding: 20px;
     transition: all 0.3s ease;
+    height:auto;
    
   }
   .works .left_section .middle .tags {
@@ -1052,8 +1053,9 @@ footer .bottom_section img {
   .work_section .left_section .middle {
     align-items: center;
   }
-  .works{
-    height:100%;
+  .works .right_section img
+  {
+  	height: 20%;
   }
   .on_the_web_section .container h2 {
     font-size: 10vw;
