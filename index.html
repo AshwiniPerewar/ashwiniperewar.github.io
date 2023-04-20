@@ -41,7 +41,7 @@
         target="_blank">Download Resume <img src="images/download.png" alt=">"
       /></a>
       </button>
-    </header>
+     </header>
     <div class="hero_section">
       <img class="background_image" src="images/josh-unsplash.png" alt="" />
       <div class="container">
@@ -778,7 +778,7 @@
    function handleResumeDownload() {
     console.log("working")
     const link = document.createElement("a");
-    window.open("https://drive.google.com/file/d/1x5MjVk7RpCN2rkVGVNytjlp1CdqJvb9L/view?usp=sharing", "_blank");
+    window.open("https://drive.google.com/u/0/uc?id=1RIGDegILyWlsQrvAvlZhvy-KVNbgoejH&export=sharing", "_blank");
     link.download = "./img/Anusha-Surendran-Resume.pdf";
     document.body.appendChild(link);
     link.click();
@@ -786,7 +786,7 @@
     // If download attribute is not supported, open the file in a new window
     setTimeout(() => {
       if (!document.querySelector(":active")) {
-        window.open("https://drive.google.com/file/d/1x5MjVk7RpCN2rkVGVNytjlp1CdqJvb9L/view?usp=sharing", "_blank");
+        window.open("https://drive.google.com/u/0/uc?id=1RIGDegILyWlsQrvAvlZhvy-KVNbgoejH&export=sharing", "_blank");
       }
     }, 100);
   }
