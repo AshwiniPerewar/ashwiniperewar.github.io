@@ -34,11 +34,13 @@
         <div></div>
         <div></div>
       </div>
+      <button id="downloadResume">
      <a
         class="button_style1 resume_button"
         href="https://drive.google.com/u/0/uc?id=1RIGDegILyWlsQrvAvlZhvy-KVNbgoejH&export=download"
         target="_blank">Download Resume <img src="images/download.png" alt=">"
       /></a>
+      </button>
     </header>
     <div class="hero_section">
       <img class="background_image" src="images/josh-unsplash.png" alt="" />
@@ -54,13 +56,7 @@
             implement my skills in developing beautiful websites and functional
             user experiences.
           </p>
-           <a
-        class="button_style1 resume_button"
-        href="https://drive.google.com/u/0/uc?id=1RIGDegILyWlsQrvAvlZhvy-KVNbgoejH&export=sharing"
-        target="_blank">View Resume <img src="images/download.png" alt=">"
-      /></a>
-           
-        </div>
+         </div>
         <div class="linkedin">
           <img src="images/linkedin-back.png" alt="" />
           <div class="profile_section">
@@ -778,7 +774,22 @@
               (leftSectionContent[e].style.opacity = "1"),
               (leftSection[e].style.backgroundColor = "white");
           });
-          
+          document.getElementById("downloadResume").addEventListener("click",handleResumeDownload)
+   function handleResumeDownload() {
+    console.log("working")
+    const link = document.createElement("a");
+    window.open("https://drive.google.com/file/d/1x5MjVk7RpCN2rkVGVNytjlp1CdqJvb9L/view?usp=sharing", "_blank");
+    link.download = "./img/Anusha-Surendran-Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    // If download attribute is not supported, open the file in a new window
+    setTimeout(() => {
+      if (!document.querySelector(":active")) {
+        window.open("https://drive.google.com/file/d/1x5MjVk7RpCN2rkVGVNytjlp1CdqJvb9L/view?usp=sharing", "_blank");
+      }
+    }, 100);
+  }
   </script>
   
 </html>
