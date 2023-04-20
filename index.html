@@ -34,13 +34,11 @@
         <div></div>
         <div></div>
       </div>
-      <button id="downloadResume">
-     <a
+      <a
         class="button_style1 resume_button"
         href="https://drive.google.com/u/0/uc?id=1RIGDegILyWlsQrvAvlZhvy-KVNbgoejH&export=download"
         target="_blank">Download Resume <img src="images/download.png" alt=">"
       /></a>
-      </button>
      </header>
     <div class="hero_section">
       <img class="background_image" src="images/josh-unsplash.png" alt="" />
@@ -774,7 +772,7 @@
               (leftSectionContent[e].style.opacity = "1"),
               (leftSection[e].style.backgroundColor = "white");
           });
-          document.getElementById("downloadResume").addEventListener("click",handleResumeDownload)
+          document.querySelector("button_style1").addEventListener("click",handleResumeDownload)
    function handleResumeDownload() {
     console.log("working")
     const link = document.createElement("a");
