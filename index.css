@@ -181,6 +181,10 @@ header a img {
   height: 20px;
   filter: invert(1);
 }
+#downloadResume
+{
+  background-color:black;
+}
 header .resume_button {
   padding: 15px 30px;
   letter-spacing: 1px;
