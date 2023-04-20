@@ -184,6 +184,7 @@ header a img {
 #downloadResume
 {
   background-color:black;
+  background:none;
 }
 header .resume_button {
   padding: 15px 30px;
